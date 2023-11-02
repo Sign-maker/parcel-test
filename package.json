@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://github.com/Sign-maker/parcel-test/",
+  "homepage": "https://goitacademy.github.io/parcel-project-template",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-test/"
+    "build": "parcel build src/*.html --public-url /parcel-project-template/"
   },
   "repository": {
     "type": "git",
@@ -21,11 +21,18 @@
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
+    "@parcel/resolver-glob": "^2.10.2",
     "@parcel/transformer-sass": "^2.6.0",
     "parcel": "^2.6.0",
+    "parcel-plugin-static-files-copy": "^2.6.0",
     "parcel-reporter-clean-dist": "^1.0.4",
+    "parcel-reporter-static-files-copy": "^1.5.3",
     "posthtml-include": "^1.7.4",
-    "sharp": "^0.29.3"
+    "sharp": "^0.31.3"
   },
-  "browserslist": "> 0.5%, last 2 versions, not dead"
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "staticFiles": {
+    "staticPath": "src/images",
+    "staticOutPath": "images"
+  }
 }
